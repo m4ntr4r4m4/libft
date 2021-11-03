@@ -5,23 +5,23 @@ function check:
   • tolower
   • strchr
   • strrchr
-  • strncmp
+  • strncmp	xxx
   • memchr
   • memcmp
   • strnstr
-  • atoi
+  • atoi	
   • isalpha
   • isdigit
   • isalnum
   • isascii
   • isprint
-  • strlen
+  • strlen 	xxx
   • memset
   • bzero
   • memcpy
   • memmove
-  • strlcpy
-  • strlcat
+  • strlcpy	xxx
+  • strlcat	xxx
  
  Vous devez également recoder ces fonctions, en faisant appel à la fonction “malloc” :
  
