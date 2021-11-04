@@ -2,25 +2,25 @@
 I- 1er Partie
 
 function check:
-  • toupper
-  • tolower
-  • strchr
-  • strrchr
+  • toupper xxx
+  • tolower xxx
+  • strchr  xxx
+  • strrchr xxx
   • strncmp	xxx
-  • memchr
-  • memcmp
-  • strnstr
-  • atoi	
-  • isalpha
-  • isdigit
-  • isalnum
-  • isascii
-  • isprint
+  • memchr  xxx
+  • memcmp  xxx
+  • strnstr xxx
+  • atoi	xxx yyy
+  • isalpha xxx
+  • isdigit xxx
+  • isalnum xxx
+  • isascii	xxx
+  • isprint	xxx
   • strlen 	xxx
-  • memset
-  • bzero
-  • memcpy
-  • memmove
+  • memset	xxx
+  • bzero	xxx
+  • memcpy	xxx
+  • memmove	xxx
   • strlcpy	xxx
   • strlcat	xxx
  
