@@ -9,7 +9,7 @@
 /*   Updated: 2021/11/04 12:17:17 by ahammoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
+#include "libft.h"
 void	*ft_memchr(const void *s, int c, size_t n)
 {
 	unsigned char	*str;

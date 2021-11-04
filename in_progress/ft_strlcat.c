@@ -9,7 +9,7 @@
 /*   Updated: 2021/10/07 15:48:34 by ahammoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
+#include "libft.h"
 unsigned int	ft_strlen(char *src)
 {
 	unsigned int	x;

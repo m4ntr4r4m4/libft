@@ -9,20 +9,20 @@
 /*   Updated: 2021/11/04 13:18:34 by ahammoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
+#include "libft.h"
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	size_t		i;
-	const char	*str;
+	char		*str;
 	char		*dest;
 
-	str = src;
-	dest = dst;
+	str = (char *)src;
+	dest = (char *)dst;
 	i = 0;
-	while (str[i] != '\0' && (i < n))
+	while (str[i] != '\0' && (i < len))
 	{
-		(char) dst[i] = str[i];
+		dest[i] = str[i];
 		i++;
 	}
-	return (dest);
+	return (dst);
 }

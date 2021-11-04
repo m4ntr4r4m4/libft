@@ -1,24 +1,25 @@
-SRCS		= *.c
+SRCS	=	 *.c
 
-OBJS		= ${SRCS:.c=.o}
+OBJS	=	${SRCS:.c=.o}
 
-NAME		= libft
+.c.o	: ${CC} $CFLAGS} -c $< -o ${<:.c=,o}
 
-CC			= gcc
+NAME	=	 libft.a
 
-RM			= rm -f
+CFLAGS	=	-Wall -Werror -Wextra
 
-CFLAGS		= -Wall -Wextra -Werror
+CC	=	gcc
 
-${NAME}:	${OBJS}
-			${CC} -o ${NAME} ${OBJS} ${CFLAGS}
+AR	=	ar cr
 
-all:		${NAME}
+${NAME}	:	${OBJS} 
+		${AR}  ${NAME} ${OBJS}
+all	:	${name}
 
-clean:
-			${RM} ${OBJS}
+RM	=	rm -f
 
-fclean:		clean
-			${RM} ${NAME}
+clean	:
+		${RM} ${OBJS}
 
-re:			fclean all
+fclean	:	clean
+		${RM} ${NAME}

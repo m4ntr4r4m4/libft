@@ -9,16 +9,18 @@
 /*   Updated: 2021/11/04 11:35:59 by ahammoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
+#include "libft.h"
 char	*strchr(const char	*s, int	c)
 {
 	int	i;
+	char	*str;
 
+	str = (char *)s;
 	i = 0;
 	while (s[i] != '\0')
 	{
 		if (s[i] == c)
-			return (&s[i]);
+			return (&str[i]);
 		i++;
 	}
 	return (NULL);
