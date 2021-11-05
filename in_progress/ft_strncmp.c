@@ -6,10 +6,11 @@
 /*   By: ahammoud <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/02 10:08:55 by ahammoud          #+#    #+#             */
-/*   Updated: 2021/11/05 14:51:39 by ahammoud         ###   ########.fr       */
+/*   Updated: 2021/11/05 20:26:54 by ahammoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
+
 int	ft_strncmp(char *s1, char *s2, unsigned int n)
 {
 	unsigned int	i;

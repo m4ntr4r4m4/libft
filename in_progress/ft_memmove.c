@@ -6,14 +6,14 @@
 /*   By: ahammoud <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 13:08:18 by ahammoud          #+#    #+#             */
-/*   Updated: 2021/11/05 17:11:57 by ahammoud         ###   ########.fr       */
+/*   Updated: 2021/11/05 19:48:26 by ahammoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 void	*ft_memmove(void *dst, const void *src, size_t n)
 {
-	char *tmp;
-	char *dest;
+	char	*tmp;
+	char	*dest;
 
 	tmp = (char *)src;
 	dest = (char *)dst;
