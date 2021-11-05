@@ -6,7 +6,7 @@
 /*   By: ahammoud <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 13:34:19 by ahammoud          #+#    #+#             */
-/*   Updated: 2021/11/05 20:28:36 by ahammoud         ###   ########.fr       */
+/*   Updated: 2021/11/05 20:58:11 by ahammoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 
+void			*ft_calloc(size_t count, size_t size);
 char			*ft_strdup(char *src);
 int				ft_toupper(int	c);
 int				ft_tolower(int	c);
