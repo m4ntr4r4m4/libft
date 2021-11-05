@@ -6,7 +6,7 @@
 /*   By: ahammoud <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 13:34:19 by ahammoud          #+#    #+#             */
-/*   Updated: 2021/11/04 14:34:54 by ahammoud         ###   ########.fr       */
+/*   Updated: 2021/11/05 13:14:30 by ahammoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,4 +38,5 @@ int				ft_isalpha(int	c);
 void			ft_bzero(void *s, size_t n);
 int				ft_atoi(const char *str);
 int				ft_isalnum(int	c);
+int				ft_strlen(char *str);
 #endif

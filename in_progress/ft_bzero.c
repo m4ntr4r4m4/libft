@@ -6,14 +6,15 @@
 /*   By: ahammoud <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 12:49:46 by ahammoud          #+#    #+#             */
-/*   Updated: 2021/11/04 13:07:34 by ahammoud         ###   ########.fr       */
+/*   Updated: 2021/11/05 13:34:12 by ahammoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
+
 void	ft_bzero(void *s, size_t n)
 {
-	size_t			i;
-	unsigned char	*str;
+	size_t	i;
+	char	*str;
 
 	str = s;
 	i = 0;
@@ -21,8 +22,9 @@ void	ft_bzero(void *s, size_t n)
 	{
 		while (i > n)
 		{
-			str[i] = 0;
+			str[i] = '0';
 			i++;
 		}
 	}
+	s = str;
 }
