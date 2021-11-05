@@ -6,7 +6,7 @@
 /*   By: ahammoud <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 12:49:46 by ahammoud          #+#    #+#             */
-/*   Updated: 2021/11/05 13:34:12 by ahammoud         ###   ########.fr       */
+/*   Updated: 2021/11/05 13:37:54 by ahammoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -20,9 +20,9 @@ void	ft_bzero(void *s, size_t n)
 	i = 0;
 	if (n > 0)
 	{
-		while (i > n)
+		while (i < n)
 		{
-			str[i] = '0';
+			str[i] = 0;
 			i++;
 		}
 	}
