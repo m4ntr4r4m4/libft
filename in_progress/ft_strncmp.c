@@ -6,7 +6,7 @@
 /*   By: ahammoud <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/02 10:08:55 by ahammoud          #+#    #+#             */
-/*   Updated: 2021/10/04 13:14:53 by ahammoud         ###   ########.fr       */
+/*   Updated: 2021/11/05 14:51:39 by ahammoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -17,9 +17,11 @@ int	ft_strncmp(char *s1, char *s2, unsigned int n)
 	i = 0;
 	if (n == 0)
 		return (0);
-	while (s1[i] && s2[i] && i < n - 1 && s1[i] == s2[i])
+	while ((s1[i] != '\0' && s2[i] != '\0') && (i < n - 1 && s1[i] == s2[i]))
 	{
 		i++;
 	}
+	if (s1[i] == '\200' && s2[i] == '\0')
+		return (1);
 	return (s1[i] - s2[i]);
 }
