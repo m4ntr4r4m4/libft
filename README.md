@@ -10,7 +10,7 @@ function check:
   • memchr  xxx
   • memcmp  xxx
   • strnstr xxx
-  • atoi	xxx yyy
+  • atoi	xxx
   • isalpha xxx
   • isdigit xxx
   • isalnum xxx
@@ -26,15 +26,15 @@ function check:
  
  Vous devez également recoder ces fonctions, en faisant appel à la fonction “malloc” :
  
-  • calloc
-  • strdup
+  • calloc	xxx
+  • strdup	xxx
 
 
 II- 2eme partie
 
   • ft_substr
-  • ft_strjoin
-  • ft_strtrim
+  • ft_strjoin xxx
+  • ft_strtrim 
   • ft_split
   • ft_itoa
   • ft_strmapi

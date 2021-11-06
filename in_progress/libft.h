@@ -6,7 +6,7 @@
 /*   By: ahammoud <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 13:34:19 by ahammoud          #+#    #+#             */
-/*   Updated: 2021/11/05 20:58:11 by ahammoud         ###   ########.fr       */
+/*   Updated: 2021/11/05 21:12:49 by ahammoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ int				ft_isdigit(int	c);
 int				ft_isascii(int	c);
 int				ft_isalpha(int	c);
 void			ft_bzero(void *s, size_t n);
-int				ft_atoi(const char *str);
+long			ft_atoi(const char *str);
 int				ft_isalnum(int	c);
 int				ft_strlen(char *str);
 #endif
