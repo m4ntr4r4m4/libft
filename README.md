@@ -32,8 +32,8 @@ function check:
 
 II- 2eme partie
 
-  • ft_substr
-  • ft_strjoin xxx
+  • ft_substr	xxx yyy
+  • ft_strjoin	xxx
   • ft_strtrim 
   • ft_split
   • ft_itoa
