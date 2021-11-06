@@ -1,0 +1,50 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ahammoud <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/11/06 21:33:15 by ahammoud          #+#    #+#             */
+/*   Updated: 2021/11/06 22:35:57 by ahammoud         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+#include "libft.h"
+
+int	checks(char	*s1, char *set)
+{
+	int	x;
+	int	i;
+	int	sum;
+
+	i = 0;
+	sum = 0;
+	while (s1[i])
+	{
+		x = 0;
+		while(set[x] == s1[i + x])
+			{
+				if (set[x + 1] == '\0')
+					sum++; 
+				x++;
+			}
+		}
+		i++;
+	return (sum);
+}
+
+char	*ft_strtrim(char const *s1, char const *set)
+{
+	size_t	i;
+	char	*str1;
+
+	i = ft_strlen((char *)set) * checks((char *)s1, (char *)set);
+	str1 = malloc((ft_strlen((char *)s1) - i) * sizeof(char));
+	while (*s1)
+	{
+		while (*s1 != *set && )
+			*str1++ = *s1++;
+		*s1++;
+	}
+	return (str1);
+}
