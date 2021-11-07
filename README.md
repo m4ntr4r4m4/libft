@@ -46,4 +46,4 @@ II- 2eme partie
 
 
 
-TOTAL of function left is 32
+TOTAL of function left is 9
