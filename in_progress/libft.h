@@ -6,7 +6,7 @@
 /*   By: ahammoud <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 13:34:19 by ahammoud          #+#    #+#             */
-/*   Updated: 2021/11/07 21:42:35 by ahammoud         ###   ########.fr       */
+/*   Updated: 2021/11/08 16:27:09 by ahammoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,8 @@
 # include <stdlib.h>
 # include <unistd.h>
 
-char **ft_split(char const *s, char c);
+char			*ft_itoa(int n);
+char			**ft_split(char const *s, char c);
 char			*ft_strtrim(char const *s1, char const *set);
 char			*ft_substr(char const *s, unsigned int start, size_t len);
 char			*ft_strjoin(char const *s1, char const *s2);

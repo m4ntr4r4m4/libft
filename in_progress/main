@@ -1,0 +1,7 @@
+#include"libft.h"
+
+int main() {
+
+	char	*str= ft_itoa(11);
+  return 0;
+}
