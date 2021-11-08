@@ -6,10 +6,10 @@
 /*   By: ahammoud <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/28 12:07:50 by ahammoud          #+#    #+#             */
-/*   Updated: 2021/11/05 19:51:42 by ahammoud         ###   ########.fr       */
+/*   Updated: 2021/11/07 19:43:49 by ahammoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
+#include"libft.h"
 int	ft_strlen(char *str)
 {
 	int	i;

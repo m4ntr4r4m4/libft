@@ -6,45 +6,27 @@
 /*   By: ahammoud <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/06 21:33:15 by ahammoud          #+#    #+#             */
-/*   Updated: 2021/11/06 22:35:57 by ahammoud         ###   ########.fr       */
+/*   Updated: 2021/11/07 20:27:11 by ahammoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
-int	checks(char	*s1, char *set)
-{
-	int	x;
-	int	i;
-	int	sum;
-
-	i = 0;
-	sum = 0;
-	while (s1[i])
-	{
-		x = 0;
-		while(set[x] == s1[i + x])
-			{
-				if (set[x + 1] == '\0')
-					sum++; 
-				x++;
-			}
-		}
-		i++;
-	return (sum);
-}
-
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	size_t	i;
+	size_t	S;
+	size_t	E;
 	char	*str1;
 
-	i = ft_strlen((char *)set) * checks((char *)s1, (char *)set);
-	str1 = malloc((ft_strlen((char *)s1) - i) * sizeof(char));
-	while (*s1)
-	{
-		while (*s1 != *set && )
-			*str1++ = *s1++;
-		*s1++;
-	}
+	S = 0;
+	while (s1[S] && ft_strchr(set, s1[S]))
+		S++;
+	E = ft_strlen((char *)s1 + S);
+	if (E)
+		while (ft_strchr(set, s1[S + E - 1]) != 0)
+			E--;
+	str1 = malloc(sizeof(char) * E + 1);
+	if (!str1)
+		return (NULL);
+	(void)ft_strlcpy(str1, (char *)&s1[S], E + 1);
 	return (str1);
 }
