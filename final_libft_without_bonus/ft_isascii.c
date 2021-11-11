@@ -1,33 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ahammoud <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/04 12:37:21 by ahammoud          #+#    #+#             */
-/*   Updated: 2021/11/04 12:40:35 by ahammoud         ###   ########.fr       */
+/*   Created: 2021/11/04 12:00:17 by ahammoud          #+#    #+#             */
+/*   Updated: 2021/11/05 14:27:59 by ahammoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
+#include "libft.h"
+int	ft_isascii(int	c)
 {
-	size_t	i;
-	size_t	j;
-
-	i = 0;
-	if (needle[i] == '\0')
-		return (haystack);
-	while (i < len)
-	{
-		j = 0;
-		while (haystack[i + j] == needle[j])
-		{
-			if (needle[j + 1] == '\0')
-				return (&haystack[i]);
-			j++;
-		}
-		i++;
-	}
+	if (c >= 0 && c <= 127)
+		return (1);
 	return (0);
 }
