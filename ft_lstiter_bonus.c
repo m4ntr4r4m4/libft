@@ -1,27 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_lstiter_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ahammoud <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/01 13:08:21 by ahammoud          #+#    #+#             */
-/*   Updated: 2021/11/05 13:17:48 by ahammoud         ###   ########.fr       */
+/*   Created: 2021/11/13 15:29:09 by ahammoud          #+#    #+#             */
+/*   Updated: 2021/11/13 17:03:54 by ahammoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
-unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	unsigned int	i;
-
-	i = 0;
-	while ((src[i]) && (i < size - 1) && (size != 0))
+	while (lst)
 	{
-		dest[i] = src[i];
-		i++;
+		f(lst->content);
+		lst = lst->next;
 	}
-	if (size != 0)
-		dest[i] = '\0';
-	return ((unsigned int)ft_strlen(src));
 }

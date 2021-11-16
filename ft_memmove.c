@@ -1,27 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ahammoud <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/01 13:08:21 by ahammoud          #+#    #+#             */
-/*   Updated: 2021/11/05 13:17:48 by ahammoud         ###   ########.fr       */
+/*   Created: 2021/11/04 13:08:18 by ahammoud          #+#    #+#             */
+/*   Updated: 2021/11/15 17:01:21 by ahammoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
-
-unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
+void	*ft_memmove(void *dst, const void *src, size_t n)
 {
-	unsigned int	i;
+	char	*tmp;
+	char	*dest;
 
-	i = 0;
-	while ((src[i]) && (i < size - 1) && (size != 0))
+	tmp = (char *)src;
+	dest = (char *)dst;
+	if (tmp < dest)
 	{
-		dest[i] = src[i];
-		i++;
+		while (n--)
+			dest[n] = tmp[n];
 	}
-	if (size != 0)
-		dest[i] = '\0';
-	return ((unsigned int)ft_strlen(src));
+	else
+		ft_memcpy(dest, tmp, n);
+	return (dst);
 }

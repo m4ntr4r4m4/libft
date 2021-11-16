@@ -2,39 +2,39 @@
 I- 1er Partie
 
 function check:
-  • toupper xxx
-  • tolower xxx
-  • strchr  xxx
-  • strrchr xxx
-  • strncmp	xxx
-  • memchr  xxx
-  • memcmp  xxx
-  • strnstr xxx
-  • atoi	xxx
-  • isalpha xxx
-  • isdigit xxx
-  • isalnum xxx
-  • isascii	xxx
-  • isprint	xxx
-  • strlen 	xxx
-  • memset	xxx
-  • bzero	xxx
-  • memcpy	xxx
-  • memmove	xxx
-  • strlcpy	xxx
-  • strlcat	xxx
- 
+  • toupper
+  • tolower
+  • strchr
+  • strrchr
+  • strncmp
+  • memchr
+  • memcmp
+  • strnstr
+  • atoi
+  • isalpha
+  • isdigit
+  • isalnum
+  • isascii
+  • isprint
+  • strlen
+  • memset
+  • bzero
+  • memcpy
+  • memmove
+  • strlcpy
+  • strlcat
+
  Vous devez également recoder ces fonctions, en faisant appel à la fonction “malloc” :
- 
-  • calloc	xxx
-  • strdup	xxx
+
+  • calloc
+  • strdup
 
 
 II- 2eme partie
 
-  • ft_substr	xxx yyy
-  • ft_strjoin	xxx
-  • ft_strtrim 
+  • ft_substr
+  • ft_strjoin
+  • ft_strtrim
   • ft_split
   • ft_itoa
   • ft_strmapi
@@ -44,6 +44,5 @@ II- 2eme partie
   • ft_putendl_fd
   • ft_putnbr_fd
 
-
-
-TOTAL of function left is 9
+III- Bonus
+	Done!
