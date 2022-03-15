@@ -6,12 +6,12 @@
 /*   By: ahammoud <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 16:25:29 by ahammoud          #+#    #+#             */
-/*   Updated: 2021/11/15 19:11:53 by ahammoud         ###   ########.fr       */
+/*   Updated: 2022/02/25 20:01:05 by ahammoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
-static int	memory(long	n)
+static	int	memory(long n)
 {
 	int	i;
 

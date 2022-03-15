@@ -6,7 +6,7 @@
 #    By: ahammoud <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/05 13:04:56 by ahammoud          #+#    #+#              #
-#    Updated: 2021/11/15 17:13:51 by ahammoud         ###   ########.fr        #
+#    Updated: 2022/03/07 16:22:05 by ahammoud         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,7 +23,7 @@ OBJSBN	=	${SRCSB:.c=.o}
 
 NAME	=	 libft.a
 
-CFLAGS	=	-Wall -Werror -Wextra
+CFLAGS	=	-Wall -Werror -Wextra -g
 
 CC	=	gcc
 
