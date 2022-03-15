@@ -46,3 +46,16 @@ II- 2eme partie
 
 III- Bonus
 	Done!
+
+IV - Extended Functions
+
+  • ft_swap
+  • ft_strrev
+  • ft_print_table
+  • 
+  • 
+  • 
+  • 
+  • 
+  • 
+  • 

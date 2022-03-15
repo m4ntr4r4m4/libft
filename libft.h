@@ -6,7 +6,7 @@
 /*   By: ahammoud <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 13:34:19 by ahammoud          #+#    #+#             */
-/*   Updated: 2022/03/13 16:52:27 by ahammoud         ###   ########.fr       */
+/*   Updated: 2022/03/15 12:26:23 by ahammoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,4 +67,7 @@ void			ft_bzero(void *s, size_t n);
 long			ft_atoi(const char *str);
 int				ft_isalnum(int c);
 int				ft_strlen(char *str);
+void			ft_swap(int *a, int *b);
+char			*ft_strrev(char *str);
+void			ft_print_table(char **tab, int fd);
 #endif
